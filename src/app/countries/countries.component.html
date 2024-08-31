@@ -1,0 +1,8 @@
+
+<div class="row" style="margin: 8rem;">
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let c of countries">
+      <country [name]="c.name" [src]="c.imgsrc" [population]="c.population" [language]="c.language"
+      [capital]="c.capital"></country>
+    </div>
+  </div>
+  

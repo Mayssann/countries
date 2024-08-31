@@ -1,0 +1,16 @@
+
+<div class="card" [ngClass]="{'lowPopulation': population < 100000 , 'HighPopulation' : population >=100000}">
+    <img class="card-img-top" [src]="src" style="object-fit: cover; width: 100%; height: 200px;">
+    <div class="card-body">
+      <h5 class="card-title">{{name | uppercase}}</h5>
+      <p class="card-text">{{description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{language}}</li>
+      <li class="list-group-item">{{capital}}</li>
+      <li class="list-group-item">Mysn is the best</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="btn btn-primary" (click)="showPopulation()">{{population}} peoples</a>
+    </div>
+  </div>

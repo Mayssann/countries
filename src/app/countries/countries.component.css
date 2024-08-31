@@ -1,0 +1,43 @@
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    min-height: 150px; /* Ensures consistent height for card body */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the images are properly scaled and centered */
+  }
+  
+  ul.list-group {
+    text-align: center;
+  }
+  
+  .list-group-item {
+    border: none; /* Removes border for a cleaner look */
+  }
+  
+  .card-body a {
+    margin-top: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .col-2 {
+      flex: 0 0 20%; /* Sets 5 columns per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col-2 {
+      flex: 0 0 50%; /* Sets 2 columns per row on small screens */
+    }
+  }
+  
